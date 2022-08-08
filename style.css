@@ -1,0 +1,60 @@
+#checkbox::before{
+    content: '\f1e0';
+    font-family: 'font awesome 6 free';
+    font-weight: 700;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(41, 41, 41);
+    transition: all 1.5s;
+}
+#checkbox:checked::before{
+    content: '\f00d';
+}
+#checkbox:checked ~ .menu{
+    width: 123px;
+}
+.menu{
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    transition: all .5s;
+}
+.menu .menuItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.w{
+    width: 99%;
+}
+.mx{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+.left-13{
+    left: 3.25rem;
+}
+.left-9{
+    left: 2.1rem;
+}
+.left-18{
+    left: 4.5rem;
+}
+.left-22{
+    left: 5.6rem;
+}
+.h-new{
+    height: 50rem;
+}
+
+@media (min-width: 768px) {
+    .md\:w-82 {
+        width: 22rem;
+    }
+    .h-new{
+        height: 24rem;
+    }
+}
